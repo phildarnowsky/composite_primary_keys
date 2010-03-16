@@ -204,3 +204,25 @@ create table seats (
   primary key (flight_number, seat)
 );
 
+create sequence public.trains_seq start 1000;
+
+create table trains (
+  id int not null default nextval('public.trains_seq'),
+  primary key (id)
+);
+
+create sequence public.locomotives_seq start 1000;
+
+create table locomotives (
+  locomotive_id int not null default nextval('public.locomotives_seq'),
+  train_id int,
+  primary key (locomotive_id)
+);
+
+create sequence public.wheels_seq start 1000;
+
+create table wheels (
+  id int not null default nextval('public.wheels_seq'),
+  locomotive_id int,
+  primary key (id)
+);

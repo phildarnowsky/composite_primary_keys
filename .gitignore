@@ -3,3 +3,4 @@ tmp
 debug.log
 local/*.rb
 pkg
+*.swp

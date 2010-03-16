@@ -1,0 +1,10 @@
+locomotive_one:
+  locomotive_id: 1
+  train_id: 1
+locomotive_two:
+  locomotive_id: 2
+  train_id: 1
+locomotive_three:
+  locomotive_id: 3
+  train_id: 1
+

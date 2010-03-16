@@ -1,0 +1,9 @@
+wheel_one:
+  id: 1
+  locomotive_id: 1
+wheel_two:
+  id: 2
+  locomotive_id: 2
+wheel_three:
+  id: 3
+  locomotive_id: 3
