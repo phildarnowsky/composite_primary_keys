@@ -179,3 +179,20 @@ create table seats (
   primary key (flight_number, seat)
 ) type=InnoDB;
 
+
+create table trains (
+  id int(11) not null auto_increment,
+  primary key(id)
+) type=InnoDB;
+
+create table locomotives (
+  locomotive_id  int(11) not null auto_increment,
+  train_id int,
+  primary key (locomotive_id)
+) type=InnoDB;
+
+create table wheels (
+  id int(11) not null auto_increment,
+  locomotive_id int,
+  primary key (id)
+) type=InnoDB;
