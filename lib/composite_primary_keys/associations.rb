@@ -415,7 +415,7 @@ module ActiveRecord::Associations
           source_primary_key     = @reflection.source_reflection.primary_key_name
         else
           reflection_primary_key = @reflection.source_reflection.primary_key_name
-          source_primary_key     = @reflection.through_reflection.primary_key_name
+          source_primary_key     = @reflection.through_reflection.klass.primary_key
         end
 
         "INNER JOIN %s ON %s #{@reflection.options[:joins]} #{custom_joins}" % [

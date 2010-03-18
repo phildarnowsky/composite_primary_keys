@@ -1,7 +1,7 @@
 --- !ruby/object:Gem::Specification 
 name: composite_primary_keys
 version: !ruby/object:Gem::Version 
-  version: 2.3.5.1
+  version: 2.3.5.1.2
 platform: ruby
 authors: 
 - Dr Nic Williams
@@ -165,7 +165,6 @@ files:
 - test/test_santiago.rb
 - test/test_tutorial_examle.rb
 - test/test_update.rb
-- tmp/test.db
 - website/index.html
 - website/index.txt
 - website/javascripts/rounded_corners_lite.inc.js
